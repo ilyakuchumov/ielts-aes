@@ -7,7 +7,8 @@ from datetime import datetime
 
 DATA_DIR = '../data/raw_hg'
 
-INPUT_TABLES = [
+# TODO: change to argparse
+INPUT_TABLES_NAMES = [
     'chillies_gpt_eval_train.csv',
     'chillies_gpt_eval_test.csv',
 ]
@@ -19,49 +20,49 @@ logger = logging.getLogger(__name__)
 
 def read_tables(
         data_dir: str,
-        input_tables: list[str],
+        input_table_names: list[str],
 ) -> list[tuple[str, pd.DataFrame]]:
     input_data_frames = []
-    for table in input_tables:
-        table_path = os.path.join(data_dir, table)
-        logger.info(f'Reading {table} from {table_path}')
+    for table_name in input_table_names:
+        table_path = os.path.join(data_dir, table_name)
+        logger.info(f'Reading {table_name} from {table_path}')
         df = pd.read_csv(table_path)
-        logger.info(f'Table {table} contains {len(df)} rows')
-        input_data_frames.append((table, df))
+        logger.info(f'Table {table_name} contains {len(df)} rows')
+        input_data_frames.append((table_name, df))
     return input_data_frames
 
 
 def prepare_table(
-        table: pd.DataFrame,
+        table_content: pd.DataFrame,
 ) -> pd.DataFrame:
     result = {
         'id': [],
-        'question': [],
+        'task': [],
         'essay': [],
-        'score': [],
+        'band': [],
         'timestamp': [],
         'iteration': [],
         'source': [],
     }
 
-    for prompt, essay, band in zip(table['prompt'], table['essay'], table['band']):
-        processed_question = str(prompt.strip())
+    for prompt, essay, band in zip(table_content['prompt'], table_content['essay'], table_content['band']):
+        processed_task = str(prompt.strip())
         processed_essay = str(essay.strip())
 
-        processed_score = band.strip()
-        if processed_score == '<4':
-            processed_score = '0'
-        processed_score = float(processed_score)
+        processed_band = band.strip()
+        if processed_band == '<4':
+            processed_band = '0'
+        processed_band = float(processed_band)
 
-        if len(processed_question) < 10 or len(processed_essay) < 10:
-            logger.info(f'Skipped bad row with question and essay: \n{processed_question}\n{processed_essay}')
+        if len(processed_task) < 10 or len(processed_essay) < 10:
+            logger.info(f'Skipped bad row with question and essay: \n{processed_task}\n{processed_essay}')
             continue
 
         timestamp = str(datetime.fromtimestamp(time.time()))
         result['id'].append(random.randint(1, 10**18))
-        result['question'].append(processed_question)
+        result['task'].append(processed_task)
         result['essay'].append(processed_essay)
-        result['score'].append(processed_score)
+        result['band'].append(processed_band)
         result['timestamp'].append(timestamp)
         result['iteration'].append(0) # iteration 0 means before any RLFH or additional data mining
         result['source'].append('hf')
@@ -71,7 +72,7 @@ def prepare_table(
 
 def main():
     logging.basicConfig(level=logging.INFO)
-    tables = read_tables(DATA_DIR, INPUT_TABLES)
+    tables = read_tables(DATA_DIR, INPUT_TABLES_NAMES)
     for table_name, table_content in tables:
         prepared_table = prepare_table(table_content)
         output_table_name = 'iter0_' + table_name
