@@ -4,6 +4,7 @@ import random
 import logging
 import time
 from datetime import datetime
+import re
 
 DATA_DIR = '../data/raw_hg'
 
@@ -46,8 +47,15 @@ def prepare_table(
     }
 
     for prompt, essay, band in zip(table_content['prompt'], table_content['essay'], table_content['band']):
-        processed_task = str(prompt.strip())
+        processed_task = str(prompt)
+        # TODO: generally this is bad, because paragraphs should have impact on score
+        processed_task = re.sub(r'[\n\r\t]', ' ', processed_task)
+        processed_task = processed_task.strip()
+
         processed_essay = str(essay.strip())
+        # TODO: generally this is bad, because paragraphs should have impact on score
+        processed_essay = re.sub(r'[\n\r\t]', ' ', processed_essay)
+        processed_essay = processed_essay.strip()
 
         processed_band = band.strip()
         if processed_band == '<4':
@@ -78,7 +86,7 @@ def main():
         output_table_name = 'iter0_' + table_name
         output_path = os.path.join(OUTPUT_DIR, f'{output_table_name}')
         logger.info(f'Writing processed {table_name} to {output_path}')
-        prepared_table.to_csv(output_path)
+        prepared_table.to_csv(output_path, index=False, header=True)
 
 
 if __name__ == '__main__':
