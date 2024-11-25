@@ -5,19 +5,11 @@ import logging
 import time
 from datetime import datetime
 import re
+import click
 
-DATA_DIR = '../data/raw_hg'
-
-# TODO: change to argparse
-INPUT_TABLES_NAMES = [
-    'chillies_gpt_eval_train.csv',
-    'chillies_gpt_eval_test.csv',
-]
-
-OUTPUT_DIR = '../data/scorer_data'
+NEW_LINE_STR = '<NL>'
 
 logger = logging.getLogger(__name__)
-
 
 def read_tables(
         data_dir: str,
@@ -48,13 +40,13 @@ def prepare_table(
 
     for prompt, essay, band in zip(table_content['prompt'], table_content['essay'], table_content['band']):
         processed_task = str(prompt)
-        # TODO: generally this is bad, because paragraphs should have impact on score
-        processed_task = re.sub(r'[\n\r\t]', ' ', processed_task)
+        processed_task = re.sub(r'[\n\r]', NEW_LINE_STR, processed_task)
+        processed_task = re.sub(r'\t', ' ', processed_task)
         processed_task = processed_task.strip()
 
         processed_essay = str(essay.strip())
-        # TODO: generally this is bad, because paragraphs should have impact on score
-        processed_essay = re.sub(r'[\n\r\t]', ' ', processed_essay)
+        processed_essay = re.sub(r'[\n\r]', NEW_LINE_STR, processed_essay)
+        processed_essay = re.sub(r'\t', ' ', processed_essay)
         processed_essay = processed_essay.strip()
 
         processed_band = band.strip()
@@ -78,13 +70,24 @@ def prepare_table(
     return pd.DataFrame(data=result)
 
 
-def main():
+@click.command()
+@click.option('--data-dir')
+@click.option('--input-table-name', 'input_table_names', multiple=True)
+@click.option('--output-dir')
+def main(
+        data_dir: str,
+        input_table_names: list[str],
+        output_dir: str,
+):
     logging.basicConfig(level=logging.INFO)
-    tables = read_tables(DATA_DIR, INPUT_TABLES_NAMES)
+
+    logger.info(f'Running with: data_dir: {data_dir}, input_table_names: {input_table_names}, output_dir: {output_dir}')
+
+    tables = read_tables(data_dir, input_table_names)
     for table_name, table_content in tables:
         prepared_table = prepare_table(table_content)
         output_table_name = 'iter0_' + table_name
-        output_path = os.path.join(OUTPUT_DIR, f'{output_table_name}')
+        output_path = os.path.join(output_dir, f'{output_table_name}')
         logger.info(f'Writing processed {table_name} to {output_path}')
         prepared_table.to_csv(output_path, index=False, header=True)
 
