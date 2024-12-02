@@ -1,0 +1,13 @@
+{
+  "embeddings_model": {
+    "name": "hs-hf/jina-embeddings-v3-distilled",
+    "size": 512
+  },
+  "head_layers": [
+    "fc_100",
+    "relu",
+    "fc_50",
+    "relu",
+    "fc_1"
+  ]
+}

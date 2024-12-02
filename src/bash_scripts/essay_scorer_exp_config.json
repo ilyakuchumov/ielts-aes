@@ -1,0 +1,120 @@
+{
+  "hyper_params": {
+    "early_stop": [
+      -1,
+      1024
+    ],
+    "learning_rate": [
+      0.01,
+      0.001,
+      0.0005,
+      0.0001,
+      0.00005
+    ],
+    "max_epochs": [
+      2048,
+      8192,
+      16384
+    ],
+    "train_batch_size": [
+      128,
+      512,
+      1024,
+      2048
+    ],
+    "weight_decay": [
+      0,
+      0.01,
+      0.001
+    ]
+  },
+  "scorer_model": {
+    "embeddings_model": [
+      {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      }
+    ],
+    "head_layers": [
+      [
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ],
+      [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ],
+      [
+        "fc_200",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ],
+      [
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ],
+      [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ],
+      [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ],
+      [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ],
+      [
+        "fc_200",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ],
+      [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ],
+      [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    ]
+  }
+
+}

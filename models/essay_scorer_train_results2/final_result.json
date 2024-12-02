@@ -1,0 +1,2844 @@
+[
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 5e-05,
+      "max_epochs": 16384,
+      "train_batch_size": 512,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      30.251466751098633,
+      0.6147485971450806,
+      0.2538468539714813,
+      0.08106592297554016,
+      0.08105090260505676,
+      0.06395697593688965,
+      0.05292663350701332,
+      0.012643986381590366,
+      0.03819477930665016,
+      0.049446579068899155,
+      0.03632192313671112,
+      0.007241375278681517,
+      0.010932648554444313,
+      0.003959449008107185,
+      0.006363150663673878,
+      0.01032198779284954,
+      0.0036865908186882734,
+      0.018941480666399002,
+      0.010538504458963871,
+      0.012032455764710903,
+      0.008225015364587307,
+      0.003005820792168379,
+      0.00852849893271923,
+      0.014390566386282444,
+      0.002854912308976054,
+      0.01123411301523447,
+      0.0026790800038725138,
+      0.07250236719846725,
+      0.00414580013602972,
+      0.0030366869177669287,
+      0.007363512180745602,
+      0.005501218140125275,
+      0.0073168277740478516
+    ],
+    "test_loss": 0.011905257750186138,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0001,
+      "max_epochs": 8192,
+      "train_batch_size": 1024,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_200",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      23.12956428527832,
+      0.9256552457809448,
+      0.20348656177520752,
+      0.06363629549741745,
+      0.06903989613056183,
+      0.09696297347545624,
+      0.018562790006399155,
+      0.024630602449178696,
+      0.019874457269906998,
+      0.026993680745363235,
+      0.024235812947154045,
+      0.01777239888906479,
+      0.032823093235492706,
+      0.03156975656747818,
+      0.03945613652467728,
+      0.018051818013191223,
+      0.06822444498538971
+    ],
+    "test_loss": 0.06363016040995717,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.0005,
+      "max_epochs": 8192,
+      "train_batch_size": 512,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      4.813078880310059,
+      0.4804871678352356,
+      0.30833515524864197,
+      0.2047819048166275,
+      0.14926502108573914,
+      0.10935134440660477,
+      0.11295439302921295,
+      0.11878053843975067,
+      0.08515716344118118,
+      0.13869847357273102,
+      0.031426798552274704,
+      0.07054439187049866,
+      0.03891744092106819,
+      0.05555661767721176,
+      0.03832383081316948,
+      0.06542469561100006,
+      0.07060299813747406
+    ],
+    "test_loss": 0.10031294915825129,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.0005,
+      "max_epochs": 16384,
+      "train_batch_size": 512,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      3.0813260078430176,
+      1.0626972913742065,
+      0.5478811860084534,
+      0.4116859436035156,
+      0.5075472593307495,
+      0.3313698172569275,
+      0.2231309413909912,
+      0.29319021105766296,
+      0.22586558759212494,
+      0.29744818806648254,
+      0.2616875171661377,
+      0.2585310935974121,
+      0.28494879603385925,
+      0.21870890259742737,
+      0.1713964194059372,
+      0.19515156745910645,
+      0.24034999310970306,
+      0.21560615301132202,
+      0.1979420930147171,
+      0.1897342950105667,
+      0.2301289141178131,
+      0.13903550803661346,
+      0.13215294480323792,
+      0.1616215705871582,
+      0.21682263910770416,
+      0.36649709939956665,
+      0.17084969580173492,
+      0.14888586103916168,
+      0.2580585777759552,
+      0.22132322192192078,
+      0.2136429399251938,
+      0.15956760942935944,
+      0.15655003488063812
+    ],
+    "test_loss": 0.14534225733950734,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 5e-05,
+      "max_epochs": 2048,
+      "train_batch_size": 128,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      5.058868885040283,
+      0.2089623510837555,
+      0.057557061314582825,
+      0.028708698228001595,
+      0.02698742225766182
+    ],
+    "test_loss": 0.03344103030394763,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.01,
+      "max_epochs": 8192,
+      "train_batch_size": 1024,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      3.4018924236297607,
+      3.6765496730804443,
+      3.5859763622283936,
+      3.5792124271392822,
+      3.688913345336914,
+      3.869567394256592,
+      3.3876523971557617,
+      3.546976089477539,
+      3.7898590564727783,
+      3.7710683345794678,
+      4.2262372970581055,
+      3.744533061981201,
+      3.2630727291107178,
+      4.183912754058838,
+      3.17386531829834,
+      3.694234848022461,
+      3.823198080062866
+    ],
+    "test_loss": 4.189037561416626,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.01,
+      "max_epochs": 8192,
+      "train_batch_size": 512,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      4.1350932121276855,
+      3.2480316162109375,
+      2.5830636024475098,
+      2.3845982551574707,
+      3.451320171356201,
+      2.3212621212005615,
+      2.7290613651275635,
+      3.0988004207611084,
+      5.014383792877197,
+      3.0348331928253174,
+      2.212502956390381,
+      2.3687148094177246,
+      2.4581687450408936,
+      2.532383918762207,
+      2.7244153022766113,
+      3.3410258293151855,
+      4.659858226776123
+    ],
+    "test_loss": 3.6280489936470985,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.0001,
+      "max_epochs": 8192,
+      "train_batch_size": 2048,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_200",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      32.06488037109375,
+      1.0974864959716797,
+      0.40115535259246826,
+      0.2054562270641327,
+      0.16874554753303528,
+      0.12859731912612915,
+      0.10179194062948227,
+      0.07329578697681427,
+      0.08876662701368332,
+      0.07159598171710968,
+      0.0837157666683197,
+      0.06230852007865906,
+      0.07997509837150574,
+      0.046803150326013565,
+      0.07771853357553482,
+      0.051682665944099426,
+      0.12346324324607849
+    ],
+    "test_loss": 0.11863412777893245,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0001,
+      "max_epochs": 16384,
+      "train_batch_size": 1024,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      29.962059020996094,
+      1.2810730934143066,
+      0.7919438481330872,
+      0.4922688603401184,
+      0.3846863806247711,
+      0.27267658710479736,
+      0.21612948179244995,
+      0.2305389791727066,
+      0.19302771985530853,
+      0.23515163362026215,
+      0.1570572555065155,
+      0.17845827341079712,
+      0.16363947093486786,
+      0.20151816308498383,
+      0.11896819621324539,
+      0.09914106875658035,
+      0.11753476411104202,
+      0.11768670380115509,
+      0.09331207722425461,
+      0.10576950758695602,
+      0.10447385907173157,
+      0.10002116858959198,
+      0.08710917830467224,
+      0.09538131207227707,
+      0.08877701312303543,
+      0.09696279466152191,
+      0.07399733364582062,
+      0.07285626977682114,
+      0.09369784593582153,
+      0.1117994487285614,
+      0.08564503490924835,
+      0.11583663523197174,
+      0.08121088892221451
+    ],
+    "test_loss": 0.09726595832034945,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.0005,
+      "max_epochs": 2048,
+      "train_batch_size": 128,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      4.23603630065918,
+      0.18117235600948334,
+      0.06628051400184631,
+      0.039622411131858826,
+      0.013951604254543781
+    ],
+    "test_loss": 0.035721326945349574,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.01,
+      "max_epochs": 8192,
+      "train_batch_size": 2048,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      8.323277473449707,
+      2.130496025085449,
+      2.7300984859466553,
+      2.6449646949768066,
+      2.6668684482574463,
+      2.7038261890411377,
+      2.55424427986145,
+      3.552368640899658,
+      3.7391252517700195,
+      3.862030267715454,
+      3.6066834926605225,
+      3.666857957839966,
+      3.7323427200317383,
+      3.635242223739624,
+      3.556156873703003,
+      3.7161035537719727,
+      3.8410634994506836
+    ],
+    "test_loss": 4.37109199911356,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0005,
+      "max_epochs": 2048,
+      "train_batch_size": 1024,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_200",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      7.94349479675293,
+      0.4823217988014221,
+      0.2180972844362259,
+      0.062138818204402924,
+      0.0402919240295887
+    ],
+    "test_loss": 0.05860098695848137,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 5e-05,
+      "max_epochs": 8192,
+      "train_batch_size": 128,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_200",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      13.613351821899414,
+      0.1279202103614807,
+      0.030388619750738144,
+      0.01828136295080185,
+      0.021556977182626724,
+      0.013902788050472736,
+      0.09850840270519257,
+      0.029654813930392265,
+      0.013927826657891273,
+      0.026217162609100342,
+      0.007850863970816135,
+      0.009441752918064594,
+      0.01608271710574627,
+      0.008029459044337273,
+      0.01773025095462799,
+      0.015629727393388748,
+      0.002854462480172515
+    ],
+    "test_loss": 0.01475720736925723,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0001,
+      "max_epochs": 16384,
+      "train_batch_size": 512,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      27.24989891052246,
+      0.4602927565574646,
+      0.18561792373657227,
+      0.11325500905513763,
+      0.131699338555336,
+      0.057844147086143494,
+      0.08068198710680008,
+      0.036814767867326736,
+      0.033038653433322906,
+      0.05352744832634926,
+      0.028897512704133987,
+      0.06077251210808754,
+      0.08529900759458542,
+      0.14406956732273102,
+      0.04266061261296272,
+      0.028618820011615753,
+      0.06833897531032562,
+      0.05390114337205887,
+      0.06729310005903244,
+      0.016361569985747337,
+      0.0779641792178154,
+      0.025935927405953407,
+      0.044987499713897705,
+      0.1586856096982956,
+      0.010960862971842289,
+      0.018591560423374176,
+      0.030110212042927742,
+      0.03463888168334961,
+      0.06530541926622391,
+      0.03550107032060623,
+      0.020431552082300186,
+      0.16324765980243683,
+      0.0652124211192131
+    ],
+    "test_loss": 0.03808892943197861,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.01,
+      "max_epochs": 8192,
+      "train_batch_size": 2048,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      7.581660747528076,
+      3.2515006065368652,
+      3.863908529281616,
+      3.6804215908050537,
+      3.4549007415771484,
+      3.86197829246521,
+      3.7852938175201416,
+      4.051387786865234,
+      3.6772727966308594,
+      3.7230536937713623,
+      3.874412775039673,
+      3.758511781692505,
+      3.752178430557251,
+      3.25167179107666,
+      3.530721426010132,
+      3.7747552394866943,
+      3.867286443710327
+    ],
+    "test_loss": 4.103592365980148,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.001,
+      "max_epochs": 2048,
+      "train_batch_size": 2048,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      13.808212280273438,
+      0.715816080570221,
+      0.7001301646232605,
+      0.298806756734848,
+      0.2701932191848755
+    ],
+    "test_loss": 0.30685795564204454,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 5e-05,
+      "max_epochs": 16384,
+      "train_batch_size": 2048,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      37.18418502807617,
+      3.8373639583587646,
+      1.7204818725585938,
+      0.8927762508392334,
+      0.6056453585624695,
+      0.4231474697589874,
+      0.2917048931121826,
+      0.2541247010231018,
+      0.1903337985277176,
+      0.15273676812648773,
+      0.12646901607513428,
+      0.15166038274765015,
+      0.0933649018406868,
+      0.09925486147403717,
+      0.08766665309667587,
+      0.06758797913789749,
+      0.07301200181245804,
+      0.061498984694480896,
+      0.046070098876953125,
+      0.06899507343769073,
+      0.050596706569194794,
+      0.045457687228918076,
+      0.04298887401819229,
+      0.038142286241054535,
+      0.05058476701378822,
+      0.04070756584405899,
+      0.02830621227622032,
+      0.028162818402051926,
+      0.02706599049270153,
+      0.02149496227502823,
+      0.023972854018211365,
+      0.05750920996069908,
+      0.01928386092185974
+    ],
+    "test_loss": 0.03993598505621776,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.01,
+      "max_epochs": 2048,
+      "train_batch_size": 1024,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      3.866617202758789,
+      3.8643686771392822,
+      3.8541529178619385,
+      3.786546468734741,
+      3.3533589839935303
+    ],
+    "test_loss": 4.083574783056974,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.0005,
+      "max_epochs": 16384,
+      "train_batch_size": 1024,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      24.27522850036621,
+      0.8521484732627869,
+      0.3132263422012329,
+      0.14922742545604706,
+      0.08253373205661774,
+      0.1314852237701416,
+      0.04819703474640846,
+      2.237607002258301,
+      0.03574259579181671,
+      0.04550369456410408,
+      0.09049952775239944,
+      0.07983365654945374,
+      0.16809166967868805,
+      0.09108211100101471,
+      0.10788647830486298,
+      0.09912114590406418,
+      0.08065617829561234,
+      0.05660717189311981,
+      0.03587725758552551,
+      0.0416850745677948,
+      0.02824258804321289,
+      0.04167099669575691,
+      0.061700500547885895,
+      0.0390348806977272,
+      0.01773894391953945,
+      0.03302754461765289,
+      0.027066072449088097,
+      0.01968717947602272,
+      0.015807582065463066,
+      0.029724186286330223,
+      0.014448967762291431,
+      0.029637331143021584,
+      0.039695583283901215
+    ],
+    "test_loss": 0.04733221710193902,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 5e-05,
+      "max_epochs": 16384,
+      "train_batch_size": 512,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      36.17319107055664,
+      0.919564962387085,
+      0.3575129508972168,
+      0.25541096925735474,
+      0.14308497309684753,
+      0.05024851858615875,
+      0.05065296217799187,
+      0.05001497641205788,
+      0.041092388331890106,
+      0.023122625425457954,
+      0.017773712053894997,
+      0.02790440246462822,
+      0.016711881384253502,
+      0.050583746284246445,
+      0.02433571219444275,
+      0.024694321677088737,
+      0.018969200551509857,
+      0.012697171419858932,
+      0.008396601304411888,
+      0.013502320274710655,
+      0.006445780396461487,
+      0.03178488835692406,
+      0.05942346528172493,
+      0.010909432545304298,
+      0.003047980833798647,
+      0.003415522398427129,
+      0.01113186590373516,
+      0.010121216997504234,
+      0.006987567525357008,
+      0.01614605262875557,
+      0.025924835354089737,
+      0.00419095391407609,
+      0.0054682595655322075
+    ],
+    "test_loss": 0.013238798892416526,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 5e-05,
+      "max_epochs": 16384,
+      "train_batch_size": 512,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      38.79724884033203,
+      1.528627634048462,
+      0.7885403037071228,
+      0.7708762288093567,
+      0.8072787523269653,
+      0.3349658250808716,
+      0.36128315329551697,
+      0.2308957725763321,
+      0.22129331529140472,
+      0.26487997174263,
+      0.17621472477912903,
+      0.14167404174804688,
+      0.2072674185037613,
+      0.08441178500652313,
+      0.10548079758882523,
+      0.10479483008384705,
+      0.1892668604850769,
+      0.13434998691082,
+      0.07425282150506973,
+      0.09512463212013245,
+      0.10911908745765686,
+      0.07115458697080612,
+      0.07130240648984909,
+      0.07563187181949615,
+      0.09008996188640594,
+      0.0719115287065506,
+      0.047936733812093735,
+      0.13848745822906494,
+      0.116395503282547,
+      0.07402294129133224,
+      0.057996008545160294,
+      0.0692242905497551,
+      0.02639571577310562
+    ],
+    "test_loss": 0.060171318880748004,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.01,
+      "max_epochs": 2048,
+      "train_batch_size": 128,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      2.981858968734741,
+      3.4712605476379395,
+      4.893649578094482,
+      3.2244062423706055,
+      3.495091676712036
+    ],
+    "test_loss": 4.23345784842968,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.01,
+      "max_epochs": 16384,
+      "train_batch_size": 1024,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_200",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      5.27888298034668,
+      2.2169699668884277,
+      2.6415255069732666,
+      4.3438849449157715,
+      2.706026315689087,
+      3.027557849884033,
+      2.3423285484313965,
+      2.43658185005188,
+      4.160232067108154,
+      2.709534168243408,
+      2.248839855194092,
+      2.2746565341949463,
+      2.0403525829315186,
+      2.7160940170288086,
+      2.5946261882781982,
+      2.8565285205841064,
+      2.2488677501678467,
+      3.959841728210449,
+      3.269831657409668,
+      4.3569111824035645,
+      3.9615366458892822,
+      3.6836647987365723,
+      3.4982874393463135,
+      3.277580738067627,
+      3.3458168506622314,
+      4.179807662963867,
+      3.814788341522217,
+      3.489184856414795,
+      3.3981783390045166,
+      3.2764222621917725,
+      3.231247901916504,
+      3.7534759044647217,
+      3.532015800476074
+    ],
+    "test_loss": 4.0792191401124,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.01,
+      "max_epochs": 8192,
+      "train_batch_size": 128,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      4.493291854858398,
+      0.7318551540374756,
+      0.7053574919700623,
+      0.39052847027778625,
+      0.33199504017829895,
+      0.4170551896095276,
+      0.23724839091300964,
+      0.8033691048622131,
+      0.25749343633651733,
+      1.2463183403015137,
+      0.26808419823646545,
+      0.38523223996162415,
+      0.18041442334651947,
+      0.1784268170595169,
+      0.2121172547340393,
+      0.1311364322900772,
+      0.2523554563522339
+    ],
+    "test_loss": 0.21756074531003833,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.0005,
+      "max_epochs": 16384,
+      "train_batch_size": 128,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      5.248866081237793,
+      0.7169205546379089,
+      0.232398122549057,
+      0.1589493751525879,
+      0.18351492285728455,
+      0.18804527819156647,
+      0.18997080624103546,
+      0.18816524744033813,
+      0.1367499828338623,
+      0.07891584932804108,
+      0.17647457122802734,
+      0.37341147661209106,
+      0.18576017022132874,
+      0.09048159420490265,
+      0.05061206594109535,
+      0.06632856279611588,
+      0.08824536204338074,
+      0.11916229128837585,
+      0.06411679834127426,
+      0.08514002710580826,
+      0.043069932609796524,
+      0.05788256973028183,
+      0.0353853702545166,
+      0.15192100405693054,
+      0.07825533300638199,
+      0.0454569049179554,
+      0.5280440449714661,
+      0.08665508776903152,
+      0.10055182874202728,
+      0.15461689233779907,
+      0.06829411536455154,
+      0.11324158310890198,
+      0.4913008511066437
+    ],
+    "test_loss": 0.09098198171705008,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 5e-05,
+      "max_epochs": 8192,
+      "train_batch_size": 128,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      13.449310302734375,
+      0.20224054157733917,
+      0.12128205597400665,
+      0.023011498153209686,
+      0.03897986188530922,
+      0.031121861189603806,
+      0.040681466460227966,
+      0.03140910714864731,
+      0.030884018167853355,
+      0.009358972311019897,
+      0.007036768831312656,
+      0.01614624820649624,
+      0.016496896743774414,
+      0.008392035029828548,
+      0.015330800786614418,
+      0.05460520088672638,
+      0.018848225474357605
+    ],
+    "test_loss": 0.01911917532561347,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0001,
+      "max_epochs": 16384,
+      "train_batch_size": 2048,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      33.59797668457031,
+      2.5660972595214844,
+      1.2341206073760986,
+      0.6463919878005981,
+      0.4117356538772583,
+      0.2965261936187744,
+      0.2557012140750885,
+      0.18907953798770905,
+      0.14901354908943176,
+      0.14977817237377167,
+      0.12860281765460968,
+      0.09906545281410217,
+      0.10046375542879105,
+      0.11589384078979492,
+      0.09194564074277878,
+      0.08636306971311569,
+      0.06701395660638809,
+      0.08028270304203033,
+      0.06351156532764435,
+      0.07702533155679703,
+      0.07874978333711624,
+      0.09840624034404755,
+      0.08982980251312256,
+      0.1359332799911499,
+      0.06799765676259995,
+      0.064290352165699,
+      0.06687790155410767,
+      0.06604862958192825,
+      0.06558747589588165,
+      0.05166369676589966,
+      0.06276815384626389,
+      0.11539376527070999,
+      0.050207629799842834
+    ],
+    "test_loss": 0.08628004021011293,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.001,
+      "max_epochs": 8192,
+      "train_batch_size": 128,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      3.9062297344207764,
+      0.38881880044937134,
+      0.17867693305015564,
+      0.2720549404621124,
+      0.1717132180929184,
+      0.28021055459976196,
+      0.26013022661209106,
+      0.19722969830036163,
+      0.16154490411281586,
+      0.49012041091918945,
+      0.4348926246166229,
+      0.2102579027414322,
+      0.15865598618984222,
+      0.16121983528137207,
+      0.47744348645210266,
+      0.1229136660695076,
+      0.11836330592632294
+    ],
+    "test_loss": 0.13480846863240004,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 5e-05,
+      "max_epochs": 2048,
+      "train_batch_size": 512,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_200",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      22.643648147583008,
+      1.0749132633209229,
+      0.3371298909187317,
+      0.1605587601661682,
+      0.09168871492147446
+    ],
+    "test_loss": 0.14311219798400998,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.0001,
+      "max_epochs": 2048,
+      "train_batch_size": 128,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_200",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      7.283271789550781,
+      0.03575100377202034,
+      0.00833534449338913,
+      0.01590416021645069,
+      0.00573930237442255
+    ],
+    "test_loss": 0.014691725067677908,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0001,
+      "max_epochs": 2048,
+      "train_batch_size": 2048,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      38.83608627319336,
+      1.1500276327133179,
+      0.4841959774494171,
+      0.3349020183086395,
+      0.21680137515068054
+    ],
+    "test_loss": 0.24462198931723833,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0001,
+      "max_epochs": 16384,
+      "train_batch_size": 1024,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      30.287458419799805,
+      1.4729691743850708,
+      0.6398335695266724,
+      0.3919135332107544,
+      0.17177356779575348,
+      0.15610837936401367,
+      0.12284017354249954,
+      0.13336990773677826,
+      0.15814264118671417,
+      0.11499567329883575,
+      0.08487031608819962,
+      0.08897718042135239,
+      0.11546020954847336,
+      0.06906087696552277,
+      0.057935819029808044,
+      0.06133333593606949,
+      0.0550534650683403,
+      0.06424681842327118,
+      0.04750817269086838,
+      0.05547523498535156,
+      0.06300636380910873,
+      0.03781992569565773,
+      0.04232931137084961,
+      0.055777449160814285,
+      0.08630373328924179,
+      0.035695843398571014,
+      0.04460346698760986,
+      0.05555495247244835,
+      0.04554097726941109,
+      0.04315446689724922,
+      0.05471012741327286,
+      0.04851352050900459,
+      0.03568090870976448
+    ],
+    "test_loss": 0.05663913144962862,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 5e-05,
+      "max_epochs": 2048,
+      "train_batch_size": 128,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      19.50468635559082,
+      0.42240622639656067,
+      0.09379920363426208,
+      0.1037735566496849,
+      0.05710309371352196
+    ],
+    "test_loss": 0.08040782390162349,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.01,
+      "max_epochs": 2048,
+      "train_batch_size": 2048,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      8.762521743774414,
+      3.034527540206909,
+      2.4865176677703857,
+      2.9592671394348145,
+      2.701706647872925
+    ],
+    "test_loss": 3.0146160572767258,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0001,
+      "max_epochs": 16384,
+      "train_batch_size": 512,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      27.749412536621094,
+      0.47558748722076416,
+      0.2123005986213684,
+      0.04675675183534622,
+      0.044279757887125015,
+      0.04874100908637047,
+      0.06289606541395187,
+      0.035243768244981766,
+      0.020517390221357346,
+      0.014857539907097816,
+      0.018302034586668015,
+      0.05315929651260376,
+      0.014633153565227985,
+      0.02486298605799675,
+      0.01048335898667574,
+      0.02328566461801529,
+      0.011119361035525799,
+      0.010070914402604103,
+      0.015100131742656231,
+      0.016727309674024582,
+      0.013171467930078506,
+      0.013409511186182499,
+      0.044456858187913895,
+      0.005434940569102764,
+      0.021293291822075844,
+      0.005284410901367664,
+      0.014306263998150826,
+      0.009462623856961727,
+      0.010220353491604328,
+      0.01074985321611166,
+      0.009580997750163078,
+      0.02697005495429039,
+      0.014581524766981602
+    ],
+    "test_loss": 0.023282006848603487,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.0001,
+      "max_epochs": 2048,
+      "train_batch_size": 512,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      27.534626007080078,
+      0.55405193567276,
+      0.2840888798236847,
+      0.20668986439704895,
+      0.14689728617668152
+    ],
+    "test_loss": 0.19932816037908196,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0005,
+      "max_epochs": 16384,
+      "train_batch_size": 1024,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      20.897737503051758,
+      0.7933162450790405,
+      0.4180644750595093,
+      0.2151780128479004,
+      0.13419488072395325,
+      0.19979502260684967,
+      0.07685969024896622,
+      0.09758486598730087,
+      0.08376381546258926,
+      0.09492751955986023,
+      0.05319507420063019,
+      0.055528294295072556,
+      0.11072109639644623,
+      0.4676111340522766,
+      0.0503699854016304,
+      0.027185510843992233,
+      0.04284721985459328,
+      0.033703386783599854,
+      0.05206652358174324,
+      0.027759281918406487,
+      0.07403133064508438,
+      0.10964556038379669,
+      0.06502842158079147,
+      0.08577459305524826,
+      0.06021793931722641,
+      0.02536008507013321,
+      0.03620915487408638,
+      0.035589732229709625,
+      0.050274915993213654,
+      0.03294657915830612,
+      0.02378903515636921,
+      0.023105395957827568,
+      0.024759283289313316
+    ],
+    "test_loss": 0.042308640840929,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 5e-05,
+      "max_epochs": 16384,
+      "train_batch_size": 128,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      21.421905517578125,
+      0.6889270544052124,
+      0.1718110889196396,
+      0.12829412519931793,
+      0.11629186570644379,
+      0.08702274411916733,
+      0.028253525495529175,
+      0.0633392184972763,
+      0.03964919596910477,
+      0.07322132587432861,
+      0.10946262627840042,
+      0.09397734701633453,
+      0.039449211210012436,
+      0.07469390332698822,
+      0.03854737430810928,
+      0.12691783905029297,
+      0.03166399523615837,
+      0.02156785875558853,
+      0.036324840039014816,
+      0.01679946295917034,
+      0.03829113394021988,
+      0.03370039910078049,
+      0.018337439745664597,
+      0.11985275149345398,
+      0.03698386251926422,
+      0.022888243198394775,
+      0.025636179372668266,
+      0.01804778166115284,
+      0.026046302169561386,
+      0.04366239532828331,
+      0.03030357137322426,
+      0.04445228353142738,
+      0.016210146248340607
+    ],
+    "test_loss": 0.05756532831583172,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0005,
+      "max_epochs": 8192,
+      "train_batch_size": 512,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      22.070659637451172,
+      0.2903096377849579,
+      0.12554720044136047,
+      0.09933249652385712,
+      0.04620116576552391,
+      0.08082524687051773,
+      0.03203706443309784,
+      0.03908589854836464,
+      0.07241547852754593,
+      0.04688580706715584,
+      0.07948672771453857,
+      0.05220387503504753,
+      0.02656703256070614,
+      0.0977780893445015,
+      0.026499271392822266,
+      0.0802534818649292,
+      0.02354121208190918
+    ],
+    "test_loss": 0.03552003891672939,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 5e-05,
+      "max_epochs": 8192,
+      "train_batch_size": 128,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      4.708009243011475,
+      0.2761217951774597,
+      0.05703597888350487,
+      0.03182573243975639,
+      0.04810747131705284,
+      0.04307457059621811,
+      0.022016160190105438,
+      0.021825434640049934,
+      0.013166522607207298,
+      0.02021152526140213,
+      0.01142510212957859,
+      0.0194016695022583,
+      0.02176184207201004,
+      0.024713777005672455,
+      0.020205587148666382,
+      0.01888524554669857,
+      0.049143847078084946
+    ],
+    "test_loss": 0.025420821853913367,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 5e-05,
+      "max_epochs": 16384,
+      "train_batch_size": 2048,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_200",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      35.96165466308594,
+      1.4999127388000488,
+      0.5812385678291321,
+      0.2186576873064041,
+      0.11376325786113739,
+      0.0702429935336113,
+      0.04770839959383011,
+      0.045974090695381165,
+      0.04852963984012604,
+      0.023744743317365646,
+      0.02768552303314209,
+      0.030338509008288383,
+      0.025415871292352676,
+      0.01607484370470047,
+      0.03491304814815521,
+      0.016447149217128754,
+      0.0223048347979784,
+      0.019926143810153008,
+      0.013669902458786964,
+      0.013534021563827991,
+      0.014841542579233646,
+      0.011647285893559456,
+      0.012214966118335724,
+      0.020481828600168228,
+      0.0191631056368351,
+      0.018995849415659904,
+      0.0160421971231699,
+      0.010950830765068531,
+      0.014665038324892521,
+      0.018451206386089325,
+      0.015323509462177753,
+      0.014587056823074818,
+      0.01464907731860876
+    ],
+    "test_loss": 0.022075016186136054,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0001,
+      "max_epochs": 2048,
+      "train_batch_size": 128,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_200",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      10.63484001159668,
+      0.14756086468696594,
+      0.16762849688529968,
+      0.05762644112110138,
+      0.07226507365703583
+    ],
+    "test_loss": 0.11649113334715366,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.01,
+      "max_epochs": 16384,
+      "train_batch_size": 1024,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      3.888667583465576,
+      4.190568447113037,
+      4.113919258117676,
+      3.494321346282959,
+      3.606985092163086,
+      3.8403470516204834,
+      4.055190086364746,
+      3.963963508605957,
+      3.491150379180908,
+      3.868381977081299,
+      3.765754222869873,
+      3.9531524181365967,
+      3.5529234409332275,
+      3.5845491886138916,
+      3.493320941925049,
+      3.320678234100342,
+      3.7135984897613525,
+      3.8574068546295166,
+      3.8088936805725098,
+      4.6605143547058105,
+      3.8616890907287598,
+      3.8174796104431152,
+      3.557337760925293,
+      3.6747329235076904,
+      3.6950886249542236,
+      3.4442098140716553,
+      3.7641220092773438,
+      3.5076241493225098,
+      3.9798619747161865,
+      3.592106819152832,
+      3.701207160949707,
+      3.462101936340332,
+      3.4475080966949463
+    ],
+    "test_loss": 4.245542258024216,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0001,
+      "max_epochs": 16384,
+      "train_batch_size": 2048,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      35.4688720703125,
+      2.030148506164551,
+      0.803220272064209,
+      0.5028265714645386,
+      0.3208247721195221,
+      0.322265625,
+      0.28348374366760254,
+      0.19567421078681946,
+      0.12811006605625153,
+      0.1082962229847908,
+      0.09170787781476974,
+      0.07834677398204803,
+      0.1776770055294037,
+      0.11609219759702682,
+      0.06779667735099792,
+      0.2084086686372757,
+      0.10621155798435211,
+      0.07952337712049484,
+      0.05718418210744858,
+      0.30718183517456055,
+      0.051010746508836746,
+      0.05677959695458412,
+      0.04924445226788521,
+      0.048468850553035736,
+      0.03541889786720276,
+      0.08427555859088898,
+      0.041718944907188416,
+      0.03627270832657814,
+      0.1219366043806076,
+      0.05586516857147217,
+      0.06921351701021194,
+      0.03616965562105179,
+      0.24052025377750397
+    ],
+    "test_loss": 0.3120935671031475,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0005,
+      "max_epochs": 8192,
+      "train_batch_size": 2048,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      20.704315185546875,
+      0.6777968406677246,
+      0.1859486997127533,
+      0.0858476385474205,
+      0.0568021759390831,
+      0.04577026516199112,
+      0.06893967092037201,
+      0.0924229696393013,
+      0.22715872526168823,
+      0.02604946307837963,
+      0.11905322968959808,
+      0.025564558804035187,
+      0.02419140189886093,
+      0.02371051535010338,
+      0.03664039820432663,
+      0.033939383924007416,
+      0.016994846984744072
+    ],
+    "test_loss": 0.033238406642340124,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 5e-05,
+      "max_epochs": 16384,
+      "train_batch_size": 1024,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      29.72345542907715,
+      2.4986894130706787,
+      0.8731681704521179,
+      0.3677802085876465,
+      0.168514221906662,
+      0.08522763103246689,
+      0.05313936993479729,
+      0.03598661348223686,
+      0.03237796947360039,
+      0.02884638123214245,
+      0.031629715114831924,
+      0.04838360846042633,
+      0.024215685203671455,
+      0.036736804991960526,
+      0.024275891482830048,
+      0.014541100710630417,
+      0.008495021611452103,
+      0.01593165472149849,
+      0.01693326234817505,
+      0.014987555332481861,
+      0.010367599315941334,
+      0.019408047199249268,
+      0.023724647238850594,
+      0.022011538967490196,
+      0.006581570487469435,
+      0.023361867293715477,
+      0.009580999612808228,
+      0.009889908134937286,
+      0.008949089795351028,
+      0.012485242448747158,
+      0.01673095114529133,
+      0.005148209631443024,
+      0.006985816638916731
+    ],
+    "test_loss": 0.013979759934954927,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.0005,
+      "max_epochs": 2048,
+      "train_batch_size": 128,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_200",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      4.4231157302856445,
+      0.12133665382862091,
+      0.04943200573325157,
+      0.03254421800374985,
+      0.05361402779817581
+    ],
+    "test_loss": 0.05224086670204997,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.01,
+      "max_epochs": 8192,
+      "train_batch_size": 2048,
+      "weight_decay": 0
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      6.892663955688477,
+      3.5650634765625,
+      3.598656415939331,
+      3.6966757774353027,
+      3.4265854358673096,
+      3.314406156539917,
+      3.592658758163452,
+      4.213356971740723,
+      3.5366082191467285,
+      3.999816656112671,
+      3.8714587688446045,
+      3.5063295364379883,
+      3.7205991744995117,
+      3.3253302574157715,
+      3.9886858463287354,
+      3.7995517253875732,
+      3.894510507583618
+    ],
+    "test_loss": 4.12552098184824,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": 1024,
+      "learning_rate": 0.0005,
+      "max_epochs": 2048,
+      "train_batch_size": 2048,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      30.61119270324707,
+      0.5751229524612427,
+      0.2601799964904785,
+      0.11756245791912079,
+      0.05127203091979027
+    ],
+    "test_loss": 0.0603015657979995,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 5e-05,
+      "max_epochs": 16384,
+      "train_batch_size": 1024,
+      "weight_decay": 0.01
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_50",
+        "relu",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      38.75627136230469,
+      1.4479235410690308,
+      0.6074255704879761,
+      0.33330458402633667,
+      0.2002445012331009,
+      0.16298910975456238,
+      0.10973090678453445,
+      0.09483258426189423,
+      0.08462225645780563,
+      0.07154949009418488,
+      0.0829092413187027,
+      0.05229915305972099,
+      0.07087156921625137,
+      0.041358985006809235,
+      0.04914743825793266,
+      0.06234268844127655,
+      0.044617801904678345,
+      0.03814469650387764,
+      0.05541558191180229,
+      0.05098826810717583,
+      0.03971197456121445,
+      0.031776055693626404,
+      0.04207543656229973,
+      0.04978635534644127,
+      0.031217506155371666,
+      0.03895795717835426,
+      0.05108850076794624,
+      0.05630791187286377,
+      0.0366813987493515,
+      0.04004933685064316,
+      0.04765249416232109,
+      0.04024919494986534,
+      0.07388810068368912
+    ],
+    "test_loss": 0.052318413043394685,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.01,
+      "max_epochs": 2048,
+      "train_batch_size": 512,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_200",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      4.3915934562683105,
+      5.0951080322265625,
+      3.4524776935577393,
+      3.480679512023926,
+      4.15682315826416
+    ],
+    "test_loss": 4.114983804523945,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  },
+  {
+    "hyper_params_config": {
+      "early_stop": -1,
+      "learning_rate": 0.0001,
+      "max_epochs": 16384,
+      "train_batch_size": 2048,
+      "weight_decay": 0.001
+    },
+    "scorer_model_config": {
+      "embeddings_model": {
+        "name": "hs-hf/jina-embeddings-v3-distilled",
+        "size": 512
+      },
+      "head_layers": [
+        "fc_100",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_50",
+        "tanh",
+        "fc_1"
+      ]
+    },
+    "train_loss": [
+      35.545928955078125,
+      3.0230135917663574,
+      0.7332478761672974,
+      0.3353728652000427,
+      0.2319294959306717,
+      0.1296086311340332,
+      0.1743200719356537,
+      0.06141875311732292,
+      0.07118561863899231,
+      0.04499715939164162,
+      0.044240500777959824,
+      0.08052600920200348,
+      0.030376538634300232,
+      0.039546988904476166,
+      0.03019135259091854,
+      0.07805225253105164,
+      0.03910236433148384,
+      0.03187523037195206,
+      0.02738620713353157,
+      0.07954870164394379,
+      0.024802938103675842,
+      0.024685300886631012,
+      0.018364721909165382,
+      0.03436815366148949,
+      0.020333943888545036,
+      0.033126600086688995,
+      0.014363358728587627,
+      0.020325105637311935,
+      0.017689747735857964,
+      0.045251306146383286,
+      0.056797198951244354,
+      0.0325913242995739,
+      0.02066316083073616
+    ],
+    "test_loss": 0.027861017886607442,
+    "train_test_paths": {
+      "data_dir": "../../data/scorer_data",
+      "train_table_names": [
+        "iter0_chillies_gpt_eval_train.csv"
+      ],
+      "test_table_names": [
+        "iter0_chillies_gpt_eval_test.csv"
+      ]
+    }
+  }
+]

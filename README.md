@@ -27,6 +27,77 @@ iteration in following format:
     source: str
 ```
 
+### Infrastructure
+
+#### Connect to server by ssh
+
+```
+chmod 400 SSH_KEY_PATH
+ssh -i SSH_KEY_PATH PUBLIC_ADRESS
+```
+
+#### Tmux cheat sheet
+
+https://tmuxcheatsheet.com/
+
+Basic commands
+
+```
+tmux new -s main_session
+tmux list-sessions
+tmux a -t main_session
+tmux kill-ses -t main_session
+```
+
+### Conda
+
+ubuntu@ip-172-31-71-224:~$ conda create -n gpu_server
+environment location: /opt/conda/envs/gpu_server
+
+conda activate gpu_server
+
+### Jupyper
+
+install ngnix
+
+After do "Provision the Jupyter Server"
+https://www.codingforentrepreneurs.com/blog/jupyter-notebook-server-aws-ec2-aws-vpc
+
+jupyter notebook --ip 0.0.0.0 --port 8888
+http://18.207.241.97:8888/login 
+
+http://172.31.71.224:8888/login
+
+#### Conda
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+path to env
+/opt/conda/envs/gpu_server_env
+
+conda install gpu_server_env
+conda install -n gpu_server_env-env35 ipykernel
+
+conda activate gpu_server_env
+conda deactivate
+
+/home/ubuntu/sync_dir
+
+#### LLama
+
+Submit to access
+https://huggingface.co/settings/gated-repos
+https://huggingface.co/meta-llama/Llama-3.2-3B
+
+How to run
+https://huggingface.co/meta-llama/Llama-3.2-1B
+
+#### Fine-tune
+https://colab.research.google.com/drive/1PEQyJO1-f6j0S_XJ8DV50NkpzasXkrzd?usp=sharing
+
+-----------------
+
+
+
 task
 scorer
 rewriter - next steps
@@ -115,6 +186,20 @@ general in https://huggingface.co/docs/trl/quickstart and https://huggingface.co
 
 
 
+PPO docs
+https://huggingface.co/docs/trl/ppo_trainer
+
+PPO tlrd (quite long, but has all staff)
+https://github.com/huggingface/trl/blob/main/examples/scripts/ppo/ppo_tldr.py
+
+
+
+LOOKS EASIER
+https://huggingface.co/docs/trl/dpo_trainer
+
+PLAN
+1. Download models
+2. Download any table
 
 
 
